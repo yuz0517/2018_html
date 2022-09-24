@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>회원가입</title></head>
+
+
+<style>
+table {
+	border-collapse:collapse;
+}
+td{
+	padding:20px;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: red;
+  outline: 1px solid slategrey;
+}
+</style>
+<center>
+
+
+<form>
+<table style="border-style:solid" border = "7" >
+<caption>
+<img src="images/joinus.png">
+</caption>
+<tr>
+	<td>
+		<span style="color:#777786">
+		<strong>아이디</strong>
+		</span>
+		<img src="images/star.png" height="10px" width="10px"> 
+	</td>
+	<td><input type="id" name="id" value="" style="color">
+		<input type="button" value="중복확인" onclick="alert('중복확인')">
+	</td>
+</tr>
+<tr>
+	<td>
+		<span style="color:#777786">
+		<strong>비밀번호</strong>
+		</span>
+		<img src="images/star.png" height="10px" width="10px"> 
+	</td>
+	<td>
+	    <input type = "password" name="pwd1" value="" maxlength="10">
+	</td>
+</tr>
+<tr>
+	<td>
+		<span style="color:#777786">
+		<strong>비밀번호 확인</strong>
+		</span>
+		<img src="images/star.png" height="10px" width="10px">
+	</td>
+	<td>
+	    <input type = "password" name="pwd2"value="" maxlength="10">
+	</td>
+</tr>
+<tr>
+	<td>
+		<span style="color:#777786">
+		<strong>이름</strong>
+		</span>
+		<img src="images/star.png" height="10px" width="10px">
+	</td>
+	<td>
+		<input type = "text" name ="name">
+	</td>
+</tr>
+<tr>
+	<td>
+		<span style="color:#777786">
+		<strong>주소</strong>
+		</span>
+		<img src="images/star.png" height="10px" width="10px">
+	</td>
+	<td>
+		<input type = "text"name="address" >
+</tr>
+<tr>
+	<td>
+		<span style="color:#777786">
+		<strong>전화번호</strong>
+		</span>
+		<img src="images/star.png" height="10px" width="10px">
+	</td>
+	<td>
+		<select name="callch">
+			<option value='010'>010</option>
+			<option value='011'>011</option>
+			<option value='015'>015</option>
+			<option value='016'>016</option>
+		</select>
+
+	
+		<input type="text" name="call1" style="width:50px">
+		  
+		<input type="text" name="call2" style="width:50px">
+	</td>		
+</tr>
+<tr>
+	<td>
+		<span style="color:#777786">
+			<strong>E-mail</strong>
+		</span>
+	</td>
+	<td>
+		<input type="text" name="email_1" style="width:120px">
+			@
+		<input type="text" name="email_2" style="width:120px">
+			<select name="email_s">
+				<option value='gmail.com'>gmail.com</option>
+				<option value='naver.com'>naver.com</option>
+				<option value='hanmail.net'>hanmail.net</option>
+				<option value='nate.com'>nate.com</option>
+			</select>
+	</td>		
+</tr>
+<tr>
+	<td>
+		<span style="color:#777786">
+		<strong>메일수신동의</strong>
+		</span>
+	</td>
+
+	<td>
+		 <input type="radio" name="mail_ok" checked> 수신
+         <input type="radio" name="mail_no" > 수신거부
+	</td>
+</tr>
+</table>
+<br><br>
+<input type = "submit" name="register" value="회원가입"></input>
+<input type = "button" name="cancel" value="취소"></input>
+</form>
+</center>
+</body>
+</html>
